@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tip Calculator</title>
+        <link rel="icon" href="favicon-32x32.png" >
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="background letters">
+        <div class="">
+            <header class="flex items-center justify-center pt-36 pb-10">
+                <p>S P L I <br> T T E R</h2\>
+            </header>
+
+            <main class="flex items-center justify-center ">
+                <div class="flex-col md:h-1/2 justify-end h-full md:w-4/5 items-center w-full rounded-3xl bg-white flex md:flex-row p-4">
+                    <div class="w-1/2">
+                        <form action="">
+                            <p>Bill</p>
+                            <div class="relative flex items-center py-2 pr-6">
+                                <img src="icon-dollar.svg" class="absolute m-2" alt="">
+                                <input type="text" class="inpbg text-right w-full " placeholder="0" id="bill" >
+                            </div>
+                        </form>
+                        <div class="mt-6">
+                            <p>select tip</p>
+                            <div class="relative grid grid-cols-2 grid-rows-3 gap-4 pt-2 pr-2 md:grid-cols-3 md:grid-rows-2">
+                                <button onclick="tipamount(5),total(5)" class=" background2 rounded-lg col-span-1 h-8 hover:bg-primary hover:text-second text-white">5%</button>
+                                <button onclick="tipamount(10),total(10)"  class="background2 rounded-lg col-span-1 h-8 hover:bg-primary hover:text-second text-white">10%</button>
+                                <button onclick="tipamount(15),total(15)"  class="background2 rounded-lg col-span-1 h-8 hover:bg-primary hover:text-second text-white">15%</button>
+                                <button onclick="tipamount(25),total(25)"  class="background2 rounded-lg col-span-1 h-8 hover:bg-primary hover:text-second text-white">25%</button>
+                                <button onclick="tipamount(50),total(50)"  class="background2 rounded-lg col-span-1 h-8 hover:bg-primary hover:text-second text-white">50%</button>
+                                <button onclick="tipamount(5),total()" class="background rounded-lg col-span-1 h-8  hover:bg-primary hover:text-second">custom</button>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <p class="letters">Number of people</p>
+                            <form class="relative pr-6 flex items-center">
+                                <img src="icon-person.svg" class="absolute ml-2">
+                                <input type="text" class="inpbg w-full text-right" placeholder="0" id="person" >
+                            </form>
+                        </div>
+                    </div>
+                    <div class="background2 md:w-1/2 w-11/12 mt-4 h-full rounded-3xl">
+                        <div class="mt-6 ml-10">
+                            <div class="flex flex-row gap-48 md:gap-20 items-center text-primary">
+                                <p class="text-white ">Tip Amount</p>
+                                <input class="text-primary text-4xl md:text-3xl bg-inherit" value="$0.00" id="tip"></input>
+                            </div>
+                            <p class="letter">/ person</p>
+                        </div>
+                        <div class="mb-10 ml-8">
+                            <div class="mt-2 flex flex-row gap-48 md:gap-20 items-center">
+                                <p class="text-white ">Total Amount</p>
+                                <input class="text-primary text-4xl md:text-3xl bg-inherit" value="$0.00" id="total"></input>
+                            </div>
+                            <p class="letter">/ person</p>
+                        </div>
+                        <div class="flex flex-row justify-center px-8">
+                            <button class="mb-10 letter background w-full rounded-lg mt-6 p-1 bg-cyan-300 hover:bg-primary hover:text-cyan-950" onclick="reset()">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </body>
+    <script src="calc.js"></script>
+</html>

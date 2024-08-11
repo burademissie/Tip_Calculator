@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.background{
+    background-color: hsl(185, 41%, 84%);
+}
+.letters{
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    color:hsl(183, 100%, 15%);
+}
+.background2{
+    background-color: hsl(183, 100%, 15%);
+}
+.inpbg{
+    background-color: #f4f4f5;
+}
+.letter{
+    color: hsl(186, 14%, 43%);
+}
+.background3{
+    background-color: hsl(186, 14%, 43%);
+}
+.hobg{
+    background-color: hsl(172, 67%, 45%);
+}
+.letcol{
+    color:hsl(0, 0%, 100%)
+}
